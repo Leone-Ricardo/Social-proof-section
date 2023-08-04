@@ -1,0 +1,215 @@
+@import url("https://fonts.google.com/specimen/League+Spartan");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 10% 5%;
+  background: url("./images/bg-pattern-top-desktop.svg") no-repeat top,
+    url("./images/bg-pattern-bottom-desktop.svg") no-repeat bottom;
+}
+
+.intro-section {
+  text-align: center;
+}
+
+.intro-header {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0% 15%;
+  margin-bottom: 2%;
+}
+
+.intro-text {
+  color: hsl(303, 10%, 53%);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.review-boxes {
+  text-align: center;
+  margin: 10% 0%;
+}
+
+.boxes {
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-top: 2%;
+  max-width: 500px;
+}
+
+.boxes > img {
+  margin: 0.5%;
+}
+
+/* Customers Boxes */
+
+.customers-cards {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5%;
+  padding: 3%;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.customer-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.customer-header > img {
+  border-radius: 50%;
+  width: 15%;
+  margin-right: 10%;
+}
+
+.customer-header > h1 {
+  font-weight: bold;
+}
+
+.customer-header > h1 > span {
+  color: hsl(333, 80%, 67%);
+  font-weight: normal;
+}
+
+.customer-header > h1,
+.customer-header > h2 {
+  display: inline-block;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(0, 100%, 50%);
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 764px) {
+  body {
+    margin: 2%;
+    background: url("../images/bg-pattern-top-desktop.svg") no-repeat top,
+      url("../images/bg-pattern-bottom-desktop.svg") no-repeat bottom;
+  }
+
+  /* Introductory Text */
+
+  .intro-review {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+  }
+
+  .intro-section {
+    text-align: left;
+    width: 50%;
+    padding: 5%;
+  }
+
+  .intro-header {
+    font-size: 3.5rem;
+    padding: 0%;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  /* Review Boxes */
+
+  .review-boxes {
+    width: 50%;
+    margin: 0;
+    padding: 7% 3%;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxes {
+    padding: 0;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  .icon-star {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .icon-star > img {
+    margin-left: 5%;
+  }
+
+  .boxes > p {
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+
+  .boxes:first-child {
+    margin-top: 0px;
+  }
+
+  .boxes:nth-child(2) {
+    align-self: center;
+  }
+
+  .boxes:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  /* Customers Boxes */
+
+  .customer-review-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-right: 3%;
+    height: 40vh;
+    margin-bottom: 0.8%;
+  }
+
+  .customers-cards {
+    width: 32%;
+    padding: 3% 5%;
+    margin: 0;
+  }
+
+  .customers-cards:nth-child(2) {
+    align-self: center;
+  }
+
+  .customers-cards:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .customers-cards > p {
+    font-size: 1.1em;
+  }
+}
